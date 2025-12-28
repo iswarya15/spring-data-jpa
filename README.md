@@ -37,7 +37,7 @@ SpringApplication.run(SpringDataJpaApplication.class, args);`
 
 * Row is inserted to DB. Transaction is committed. 
 
-![img.png](img.png)
+![img.png](images/img.png)
 
 ### Application Properties: 
 
@@ -55,9 +55,9 @@ Each database (PostgreSQL, MySQL, Oracle, etc.) speaks a different language.
 
 JDBC Driver is a database-specific implementation that allows Java applications to communicate with databases using JDBC APIs.
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 `spring.jpa.hibernate.ddl-auto=update` &rarr; DDL Auto Strategy
 
