@@ -70,3 +70,25 @@ Controls how Hibernate manages database tables.
 | `update`      | Tables are created if missing. Columns are added if new fields appear ✅ |
 | `validate`    | Only validates schema                                                   |
 | `none`        | No schema management                                                    |
+
+If an _object prints memory reference_, it means toString() is not overridden.
+
+### JPQL 
+
+**JPQL** (Java Persistence Query Language) is a query language used in JPA to fetch and manipulate
+data using **entity objects, not database tables**.
+
+![img.png](images/img.png)
+
+🔹 Why JPQL is used
+
+* **Database-independent and Object-oriented**
+
+* Portable across databases
+
+* Works with JPA providers (Hibernate, EclipseLink)
+
+```
+    List<Student> findByName(String name);
+    List<Student> findByMarksGreaterThan(int marks);
+```

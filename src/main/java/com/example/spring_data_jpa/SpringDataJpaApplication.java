@@ -5,6 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import java.util.List;
+import java.util.Optional;
+
 @SpringBootApplication
 public class SpringDataJpaApplication {
 
@@ -30,9 +33,8 @@ public class SpringDataJpaApplication {
         s3.setName("Steve");
         s3.setMarks(77);
 
-        repo.save(s1);
 
-
+        System.out.println(repo.findByMarksGreaterThan(90));
 	}
 
 }
